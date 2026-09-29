@@ -54,8 +54,12 @@ enum Backend {
     static func signedURLs(_ paths: [String], expiresIn: Int = 3600) async throws -> [String: URL] {
         let unique = Array(Set(paths))
         guard !unique.isEmpty else { return [:] }
-        let urls = try await supabase.storage.from("drops").createSignedURLs(paths: unique, expiresIn: expiresIn)
-        return Dictionary(zip(unique, urls), uniquingKeysWith: { first, _ in first })
+        let results = try await supabase.storage.from("drops").createSignedURLs(paths: unique, expiresIn: expiresIn)
+        var urls: [String: URL] = [:]
+        for result in results {
+            if let url = result.signedURL { urls[result.path] = url }
+        }
+        return urls
     }
 
     // MARK: Profile & couple

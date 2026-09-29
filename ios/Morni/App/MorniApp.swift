@@ -46,11 +46,11 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
         _ center: UNUserNotificationCenter,
         willPresent notification: UNNotification
     ) async -> UNNotificationPresentationOptions {
-        await MainActor.run { Task { await self.model?.refresh() } }
+        Task { @MainActor in await self.model?.refresh() }
         return [.banner, .sound]
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
-        await MainActor.run { Task { await self.model?.refresh() } }
+        Task { @MainActor in await self.model?.refresh() }
     }
 }
