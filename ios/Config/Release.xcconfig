@@ -1,0 +1,3 @@
+#include "Base.xcconfig"
+
+MORNI_APS_ENV = production

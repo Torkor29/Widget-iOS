@@ -1,0 +1,11 @@
+{
+  "name": "morni-design-scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build-assets.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.55.0"
+  }
+}

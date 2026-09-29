@@ -1,0 +1,173 @@
+# XcodeGen spec — generate the Xcode project with `xcodegen generate` (done in CI).
+# Everything that differs per environment lives in Config/*.xcconfig.
+name: Morni
+options:
+  bundleIdPrefix: app.morni
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+  groupSortPosition: top
+configFiles:
+  Debug: Config/Debug.xcconfig
+  Release: Config/Release.xcconfig
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: $(MORNI_TEAM_ID)
+    TARGETED_DEVICE_FAMILY: "1"
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    DEAD_CODE_STRIPPING: YES
+packages:
+  Supabase:
+    url: https://github.com/supabase/supabase-swift
+    from: "2.24.0"
+  RevenueCat:
+    url: https://github.com/RevenueCat/purchases-ios-spm
+    from: "5.0.0"
+  GoogleSignIn:
+    url: https://github.com/google/GoogleSignIn-iOS
+    from: "8.0.0"
+targets:
+  Morni:
+    type: application
+    platform: iOS
+    sources:
+      - path: Morni
+      - path: Shared
+    dependencies:
+      - target: MorniWidget
+      - target: MorniNotificationService
+      - package: Supabase
+        product: Supabase
+      - package: RevenueCat
+        product: RevenueCat
+      - package: GoogleSignIn
+        product: GoogleSignIn
+    info:
+      path: Morni/Info.plist
+      properties:
+        CFBundleDisplayName: Morni
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleLocalizations: [en, fr, es]
+        CFBundleDevelopmentRegion: en
+        LSRequiresIPhoneOS: true
+        ITSAppUsesNonExemptEncryption: false
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIUserInterfaceStyle: Light
+        UIBackgroundModes: [remote-notification]
+        NSCameraUsageDescription: Morni uses the camera to take the selfie you send to your person.
+        CFBundleURLTypes:
+          - CFBundleURLName: morni
+            CFBundleURLSchemes: [morni]
+          - CFBundleURLName: google
+            CFBundleURLSchemes: [$(MORNI_GOOGLE_REVERSED_CLIENT_ID)]
+        GIDClientID: $(MORNI_GOOGLE_CLIENT_ID)
+        MorniAppGroup: $(MORNI_APP_GROUP)
+        MorniSupabaseHost: $(MORNI_SUPABASE_HOST)
+        MorniSupabaseKey: $(MORNI_SUPABASE_ANON_KEY)
+        MorniRevenueCatKey: $(MORNI_REVENUECAT_KEY)
+        MorniWebDomain: $(MORNI_WEB_DOMAIN)
+    entitlements:
+      path: Morni/Morni.entitlements
+      properties:
+        aps-environment: $(MORNI_APS_ENV)
+        com.apple.security.application-groups: [$(MORNI_APP_GROUP)]
+        com.apple.developer.applesignin: [Default]
+        com.apple.developer.associated-domains: [applinks:$(MORNI_WEB_DOMAIN)]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(MORNI_BUNDLE_ID)
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+      configs:
+        Release:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: match AppStore $(MORNI_BUNDLE_ID)
+
+  MorniWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: MorniWidget
+      - path: Shared
+    info:
+      path: MorniWidget/Info.plist
+      properties:
+        CFBundleDisplayName: Morni
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+        MorniAppGroup: $(MORNI_APP_GROUP)
+        MorniSupabaseHost: $(MORNI_SUPABASE_HOST)
+        MorniSupabaseKey: $(MORNI_SUPABASE_ANON_KEY)
+        MorniWebDomain: $(MORNI_WEB_DOMAIN)
+    entitlements:
+      path: MorniWidget/MorniWidget.entitlements
+      properties:
+        com.apple.security.application-groups: [$(MORNI_APP_GROUP)]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(MORNI_BUNDLE_ID).widget
+        SKIP_INSTALL: YES
+      configs:
+        Release:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: match AppStore $(MORNI_BUNDLE_ID).widget
+
+  MorniNotificationService:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: MorniNotificationService
+      - path: Shared
+        excludes:
+          - "Resources/**"
+    info:
+      path: MorniNotificationService/Info.plist
+      properties:
+        CFBundleDisplayName: Morni
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.usernotifications.service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).NotificationService
+        MorniAppGroup: $(MORNI_APP_GROUP)
+        MorniSupabaseHost: $(MORNI_SUPABASE_HOST)
+        MorniSupabaseKey: $(MORNI_SUPABASE_ANON_KEY)
+        MorniWebDomain: $(MORNI_WEB_DOMAIN)
+    entitlements:
+      path: MorniNotificationService/MorniNotificationService.entitlements
+      properties:
+        com.apple.security.application-groups: [$(MORNI_APP_GROUP)]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(MORNI_BUNDLE_ID).notifications
+        SKIP_INSTALL: YES
+      configs:
+        Release:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: match AppStore $(MORNI_BUNDLE_ID).notifications
+
+schemes:
+  Morni:
+    build:
+      targets:
+        Morni: all
+    run:
+      config: Debug
+    archive:
+      config: Release

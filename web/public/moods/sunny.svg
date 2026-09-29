@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="sunny-g" x1="0.2" y1="0.1" x2="0.8" y2="0.95"><stop offset="0" stop-color="#FFE58F"/><stop offset="1" stop-color="#FFAA80"/></linearGradient>
+    <filter id="sunny-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#2B1033" flood-opacity=".22"/></filter>
+  </defs>
+  <g fill="#fff" stroke="#fff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" filter="url(#sunny-shadow)"><path d="M128.0 101.9 L141.0 107.3 M99.9 130.0 L105.3 143.0 M60.1 130.0 L54.7 143.0 M32.0 101.9 L19.0 107.3 M32.0 62.1 L19.0 56.7 M60.1 34.0 L54.7 21.0 M99.9 34.0 L105.3 21.0 M128.0 62.1 L141.0 56.7" fill="none" stroke-width="24"/><circle cx="80" cy="82" r="42"/></g>
+  <path d="M128.0 101.9 L141.0 107.3 M99.9 130.0 L105.3 143.0 M60.1 130.0 L54.7 143.0 M32.0 101.9 L19.0 107.3 M32.0 62.1 L19.0 56.7 M60.1 34.0 L54.7 21.0 M99.9 34.0 L105.3 21.0 M128.0 62.1 L141.0 56.7" fill="none" stroke="#FFC24B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="80" cy="82" r="42" fill="url(#sunny-g)"/><ellipse cx="64" cy="60" rx="11" ry="6" fill="#fff" opacity=".5" transform="rotate(-35 64 60)"/>
+      <path d="M60 80 q6 -7.199999999999999 12 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round"/><path d="M88 80 q6 -7.199999999999999 12 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round"/><ellipse cx="57" cy="92" rx="7.5" ry="4.5" fill="#FF6B81" opacity=".42"/><ellipse cx="103" cy="92" rx="7.5" ry="4.5" fill="#FF6B81" opacity=".42"/>
+      <path d="M67 93 Q80 112 93 93 Z" fill="#2B1033" stroke="#2B1033" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M73 101 Q80 108 87 101 Q80 97 73 101 Z" fill="#FF6B81"/>
+</svg>

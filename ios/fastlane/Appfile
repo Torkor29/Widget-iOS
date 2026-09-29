@@ -1,0 +1,2 @@
+app_identifier(ENV.fetch("MORNI_BUNDLE_ID", "app.morni.ios"))
+team_id(ENV["MORNI_TEAM_ID"]) if ENV["MORNI_TEAM_ID"]

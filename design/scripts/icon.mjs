@@ -1,0 +1,34 @@
+// Morni app icon: two little suns (you + them) rising together over the horizon;
+// where they overlap, it glows gold. Faces echo the Moods sticker style.
+export function appIconSVG() {
+  const face = (cx, cy) => `
+    <path d="M${cx - 62} ${cy} q22 -26 44 0 M${cx + 18} ${cy} q22 -26 44 0" fill="none" stroke="#2B1033" stroke-width="20" stroke-linecap="round"/>
+    <ellipse cx="${cx - 58}" cy="${cy + 46}" rx="28" ry="17" fill="#FF6B81" opacity=".45"/>
+    <ellipse cx="${cx + 58}" cy="${cy + 46}" rx="28" ry="17" fill="#FF6B81" opacity=".45"/>
+    <path d="M${cx - 22} ${cy + 44} q22 24 44 0" fill="none" stroke="#2B1033" stroke-width="18" stroke-linecap="round"/>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#B9A6FF"/><stop offset=".55" stop-color="#FF7F95"/><stop offset="1" stop-color="#FFB38A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".7" r=".55">
+      <stop offset="0" stop-color="#FFE9C7" stop-opacity=".75"/><stop offset="1" stop-color="#FFE9C7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFBF6"/><stop offset="1" stop-color="#FFEBDD"/></linearGradient>
+    <linearGradient id="lens" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE08A"/><stop offset="1" stop-color="#FFB347"/></linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B1033"/><stop offset="1" stop-color="#170B1D"/></linearGradient>
+    <clipPath id="left"><circle cx="392" cy="700" r="250"/></clipPath>
+    <clipPath id="sky-only"><rect width="1024" height="742"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#sky)"/>
+  <circle cx="512" cy="700" r="560" fill="url(#glow)"/>
+  <g clip-path="url(#sky-only)">
+    <circle cx="392" cy="700" r="250" fill="url(#sun)"/>
+    <circle cx="632" cy="700" r="250" fill="url(#sun)"/>
+    <circle cx="632" cy="700" r="250" fill="url(#lens)" clip-path="url(#left)"/>
+    ${face(262, 600)}${face(762, 600)}
+  </g>
+  <path d="M0 742 H1024 V1024 H0 Z" fill="url(#ground)"/>
+  <path d="M0 742 H1024" stroke="#FFE08A" stroke-width="10" opacity=".9"/>
+</svg>`;
+}
