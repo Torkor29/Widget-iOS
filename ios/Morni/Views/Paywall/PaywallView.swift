@@ -223,11 +223,16 @@ private struct ExitOfferView: View {
     let package: Package
     let buy: () -> Void
 
+    private var firstYearPrice: String {
+        package.storeProduct.introductoryDiscount?.localizedPriceString ?? package.storeProduct.localizedPriceString
+    }
+
     var body: some View {
         VStack(spacing: 16) {
             MoodSticker(mood: .missyou, size: 90)
             Text("Wait, a little gift").font(.display(30))
-            Text("Your first year of Morni+ for \(package.storeProduct.localizedPriceString). This offer won't come back.")
+            // The exit product carries a "pay up front" introductory offer for its first year.
+            Text("Your first year of Morni+ for \(firstYearPrice). This offer won't come back.")
                 .font(.rounded(16))
                 .multilineTextAlignment(.center)
                 .opacity(0.75)
