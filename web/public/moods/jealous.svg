@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="jealous-g" x1="0.2" y1="0.1" x2="0.8" y2="0.95"><stop offset="0" stop-color="#D9F2B8"/><stop offset="1" stop-color="#8CCB7E"/></linearGradient>
+    <filter id="jealous-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#2B1033" flood-opacity=".22"/></filter>
+  </defs>
+  <g fill="#fff" stroke="#fff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" filter="url(#jealous-shadow)"><circle cx="80" cy="88" r="42"/></g>
+  <circle cx="80" cy="88" r="42" fill="url(#jealous-g)"/><ellipse cx="62" cy="68" rx="11" ry="6" fill="#fff" opacity=".5" transform="rotate(-35 62 68)"/>
+      <path d="M52 88 a10 8 0 0 0 20 0 z" fill="#fff"/><circle cx="67" cy="91" r="3.8" fill="#2B1033"/>
+      <path d="M86 88 a10 8 0 0 0 20 0 z" fill="#fff"/><circle cx="101" cy="91" r="3.8" fill="#2B1033"/>
+      <path d="M50 88 h24" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M84 88 h24" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M72 110 q10 -5 20 2" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,31 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "CFBundleDisplayName": {
+      "shouldTranslate": false
+    },
+    "NSCameraUsageDescription": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morni uses the camera to take the selfie you send to your person."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morni utilise la caméra pour prendre le selfie que tu envoies à ta moitié."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morni usa la cámara para hacer el selfie que envías a tu persona."
+          }
+        }
+      }
+    }
+  }
+}

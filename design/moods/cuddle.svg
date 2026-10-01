@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="cuddle-g" x1="0.2" y1="0.1" x2="0.8" y2="0.95"><stop offset="0" stop-color="#FFC9E0"/><stop offset="1" stop-color="#C4A2FF"/></linearGradient>
+    <filter id="cuddle-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#2B1033" flood-opacity=".22"/></filter>
+  </defs>
+  <g fill="#fff" stroke="#fff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" filter="url(#cuddle-shadow)"><circle cx="80" cy="86" r="40"/><path d="M48 94 Q30 82 20 62 M112 94 Q130 82 140 62" fill="none" stroke-width="30"/><path d="M0 7 C-10 0 -10 -8 -5 -8 C-2.5 -8 0 -6 0 -4 C0 -6 2.5 -8 5 -8 C10 -8 10 0 0 7 Z" transform="translate(18 40) scale(1)" stroke-width="14"/><path d="M0 7 C-10 0 -10 -8 -5 -8 C-2.5 -8 0 -6 0 -4 C0 -6 2.5 -8 5 -8 C10 -8 10 0 0 7 Z" transform="translate(142 40) scale(1)" stroke-width="14"/></g>
+  <path d="M48 94 Q30 82 20 62" fill="none" stroke="#D9B2F8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><path d="M112 94 Q130 82 140 62" fill="none" stroke="#D9B2F8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="80" cy="86" r="40" fill="url(#cuddle-g)"/><ellipse cx="62" cy="66" rx="11" ry="6" fill="#fff" opacity=".5" transform="rotate(-35 62 66)"/>
+      <path d="M61 84 q6 -7.199999999999999 12 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round"/><path d="M87 84 q6 -7.199999999999999 12 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round"/><ellipse cx="58" cy="96" rx="7.5" ry="4.5" fill="#FF6B81" opacity=".42"/><ellipse cx="102" cy="96" rx="7.5" ry="4.5" fill="#FF6B81" opacity=".42"/>
+      <path d="M68 98 q12 13 24 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0 7 C-10 0 -10 -8 -5 -8 C-2.5 -8 0 -6 0 -4 C0 -6 2.5 -8 5 -8 C10 -8 10 0 0 7 Z" transform="translate(18 40) scale(1)" fill="#FF6B81"/><path d="M0 7 C-10 0 -10 -8 -5 -8 C-2.5 -8 0 -6 0 -4 C0 -6 2.5 -8 5 -8 C10 -8 10 0 0 7 Z" transform="translate(142 40) scale(1)" fill="#FF6B81"/>
+</svg>

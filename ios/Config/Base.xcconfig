@@ -1,0 +1,15 @@
+// Shared build settings. Real values are injected by CI into Secrets.xcconfig
+// (git-ignored) — see docs/SETUP.md. Rename the app here, in one place.
+// Note: "//" starts a comment in xcconfig, so hosts are written without https://.
+
+MORNI_BUNDLE_ID = app.morni.ios
+MORNI_APP_GROUP = group.app.morni.ios
+MORNI_TEAM_ID =
+MORNI_WEB_DOMAIN = morni.app
+MORNI_SUPABASE_HOST = your-project.supabase.co
+MORNI_SUPABASE_ANON_KEY =
+MORNI_REVENUECAT_KEY =
+MORNI_GOOGLE_CLIENT_ID =
+MORNI_GOOGLE_REVERSED_CLIENT_ID = com.googleusercontent.apps.placeholder
+
+#include? "Secrets.xcconfig"

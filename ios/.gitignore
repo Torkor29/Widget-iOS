@@ -1,0 +1,10 @@
+Morni.xcodeproj/
+Config/Secrets.xcconfig
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+fastlane/report.xml
+fastlane/README.md
+.bundle/
+vendor/

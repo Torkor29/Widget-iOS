@@ -1,0 +1,20 @@
+name: Hourly reminders
+
+on:
+  schedule:
+    - cron: "3 * * * *"
+  workflow_dispatch:
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    env:
+      CRON_SECRET: ${{ secrets.CRON_SECRET }}
+      SUPABASE_HOST: ${{ vars.MORNI_SUPABASE_HOST }}
+    steps:
+      - name: Trigger daily-reminder
+        if: env.CRON_SECRET != '' && env.SUPABASE_HOST != ''
+        run: |
+          curl --fail-with-body -sS -X POST \
+            -H "x-cron-secret: $CRON_SECRET" \
+            "https://${SUPABASE_HOST#https://}/functions/v1/daily-reminder"

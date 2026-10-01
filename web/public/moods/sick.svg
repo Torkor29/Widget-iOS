@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="sick-g" x1="0.2" y1="0.1" x2="0.8" y2="0.95"><stop offset="0" stop-color="#DDF5D6"/><stop offset="1" stop-color="#9FD6AC"/></linearGradient>
+    <filter id="sick-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#2B1033" flood-opacity=".22"/></filter>
+  </defs>
+  <g fill="#fff" stroke="#fff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" filter="url(#sick-shadow)"><circle cx="80" cy="86" r="42"/><path d="M86 106 L128 124" fill="none" stroke-width="22"/><path d="M114 50 q-7 10 0 14 q7 -4 0 -14 z"/></g>
+  <circle cx="80" cy="86" r="42" fill="url(#sick-g)"/><ellipse cx="62" cy="64" rx="11" ry="6" fill="#fff" opacity=".5" transform="rotate(-35 62 64)"/>
+      <path d="M56 82 q7 5 14 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M90 82 q7 5 14 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M58 90 q5 2 10 0" fill="none" stroke="#2B1033" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M92 90 q5 2 10 0" fill="none" stroke="#2B1033" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M88 107 L126 124" fill="none" stroke="#2B1033" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M88 107 L126 124" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M112 118 L126 124" fill="none" stroke="#FF6B81" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="84" cy="106" r="6" fill="#2B1033"/>
+      <path d="M114 50 q-7 10 0 14 q7 -4 0 -14 z" fill="#8EC5FF"/>
+</svg>

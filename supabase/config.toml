@@ -1,0 +1,18 @@
+# Supabase CLI config (only the settings Morni relies on; the rest uses defaults).
+project_id = "morni"
+
+[api]
+schemas = ["public"]
+
+[db]
+major_version = 17
+
+# Functions called without a user session (widget, webhooks, cron).
+[functions.widget-feed]
+verify_jwt = false
+
+[functions.revenuecat-webhook]
+verify_jwt = false
+
+[functions.daily-reminder]
+verify_jwt = false
