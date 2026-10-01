@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MoodSticker } from "./Mood";
 
 /** A CSS iPhone showing the Morni medium widget on a home screen. */
@@ -13,8 +14,8 @@ export function PhoneMockup({ partner, you, app }: { partner: string; you: strin
         </div>
 
         <div className="mx-4 mt-8 flex h-[156px] gap-1.5 rounded-[26px] bg-white/30 p-1.5 backdrop-blur">
-          <WidgetTile name={partner} time="8:42" mood="sunny" tint="from-[#FFD9C2] to-[#FF9AAE]" />
-          <WidgetTile name={you} time="8:43" mood="sleepy" tint="from-[#E5DEFF] to-[#B9A6FF]" />
+          <WidgetTile name={partner} time="8:42" mood="sunny" photo="/photos/morning.jpg" />
+          <WidgetTile name={you} time="8:43" mood="coffee" photo="/photos/coffee.jpg" />
         </div>
         <p className="mt-1.5 text-center text-[11px] font-medium text-white/90">{app}</p>
 
@@ -34,11 +35,12 @@ export function PhoneMockup({ partner, you, app }: { partner: string; you: strin
   );
 }
 
-function WidgetTile({ name, time, mood, tint }: { name: string; time: string; mood: string; tint: string }) {
+function WidgetTile({ name, time, mood, photo }: { name: string; time: string; mood: string; photo: string }) {
   return (
-    <div className={`relative flex-1 overflow-hidden rounded-[20px] bg-gradient-to-br ${tint}`}>
-      <MoodSticker id={mood} size={78} className="absolute left-1/2 top-[44%] -translate-x-1/2 -translate-y-1/2" />
-      <span className="absolute bottom-2 left-2 rounded-full bg-black/25 px-2 py-0.5 text-[10px] font-bold text-white">
+    <div className="relative flex-1 overflow-hidden rounded-[20px] bg-white/40">
+      <Image src={photo} alt="" fill sizes="130px" className="object-cover" priority />
+      <MoodSticker id={mood} size={34} className="absolute right-1 top-1 rotate-6" />
+      <span className="absolute bottom-2 left-2 rounded-full bg-black/30 px-2 py-0.5 text-[10px] font-bold text-white">
         {name} <span className="font-medium opacity-80">{time}</span>
       </span>
     </div>

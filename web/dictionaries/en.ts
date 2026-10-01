@@ -33,6 +33,7 @@ const en = {
     title: "Say it with your face (and a sticker)",
     sub: "Twenty-five original moods, drawn just for Morni. Grumpy mornings included.",
     plus: "Morni+",
+    example: "Me before coffee",
   },
   uses: {
     title: "Made for the people you miss",

@@ -33,6 +33,7 @@ const fr: Dictionary = {
     title: "Dis-le avec ta tête (et un sticker)",
     sub: "Vingt-cinq moods originaux, dessinés rien que pour Morni. Réveils grognons compris.",
     plus: "Morni+",
+    example: "Moi avant le café",
   },
   uses: {
     title: "Pour les personnes qui te manquent",

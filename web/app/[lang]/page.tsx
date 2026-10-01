@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { AppStoreBadge, Footer, Header } from "@/components/Chrome";
 import { MoodSticker } from "@/components/Mood";
@@ -76,8 +77,19 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         {/* Moods */}
         <section id="moods" className="bg-plum scroll-mt-16 text-cream">
           <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
-            <h2 className="font-display text-4xl font-semibold sm:text-5xl">{dict.moods.title}</h2>
-            <p className="mt-4 max-w-xl text-lg text-cream/70">{dict.moods.sub}</p>
+            <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
+              <div>
+                <h2 className="font-display text-4xl font-semibold sm:text-5xl">{dict.moods.title}</h2>
+                <p className="mt-4 max-w-xl text-lg text-cream/70">{dict.moods.sub}</p>
+              </div>
+              <figure className="relative mx-auto w-52 shrink-0 rotate-3 rounded-[28px] bg-white p-2 shadow-2xl md:mx-0">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-[22px]">
+                  <Image src="/photos/grumpy.jpg" alt="" fill sizes="208px" className="object-cover" />
+                </div>
+                <MoodSticker id="grumpy" size={84} className="absolute -right-6 -top-6 -rotate-6" />
+                <figcaption className="px-2 pb-1 pt-2 text-center text-sm font-semibold text-plum">{dict.moods.example}</figcaption>
+              </figure>
+            </div>
             <div className="mt-12 grid grid-cols-3 gap-4 sm:grid-cols-5">
               {moods.map((mood) => (
                 <div key={mood.id} className="relative flex flex-col items-center rounded-3xl bg-white/5 px-2 pb-4 pt-3 text-center">

@@ -33,6 +33,7 @@ const es: Dictionary = {
     title: "Dilo con tu cara (y un sticker)",
     sub: "Veinticinco moods originales, dibujados solo para Morni. Mañanas de malas incluidas.",
     plus: "Morni+",
+    example: "Yo antes del café",
   },
   uses: {
     title: "Para las personas que echas de menos",
