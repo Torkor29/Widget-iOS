@@ -10,7 +10,7 @@ Ne jamais mettre le nom d'une app concurrente dans les mots-clés (règle 2.3.7)
 **Name** : `Morni: Couple Selfie Widget`
 **Subtitle** : `Wake up to your person's face`
 **Keywords** : `boyfriend,girlfriend,long distance,ldr,relationship,love,partner,homescreen,together,miss you,bff`
-**Promotional text** : One selfie a day, straight to their home screen. New: 12 original moods to say how your morning is really going.
+**Promotional text** : One selfie a day, straight to their home screen. New: 25 original moods to say how your morning is really going.
 
 **Description**
 ```
@@ -35,7 +35,7 @@ WIDGETS
 • Lock Screen and StandBy
 
 MORNI+ — ONE PLAN FOR BOTH OF YOU
-• All 12 moods, Spicy included
+• All 25 moods (15 more than free), Spicy included
 • Large and Lock Screen widgets
 • Every selfie, forever: your shared memories
 • Bonus selfies, as many as you want
@@ -63,7 +63,7 @@ Terms: https://morni.app/terms
 **Nom** : `Morni : widget selfie couple`
 **Sous-titre** : `Son sourire sur ton écran`
 **Mots-clés** : `copain,copine,amoureux,distance,relation,amour,photo,partenaire,ensemble,tu me manques,bff`
-**Texte promotionnel** : Un selfie par jour, directement sur son écran d'accueil. Nouveau : 12 moods originaux pour dire comment se passe vraiment ton réveil.
+**Texte promotionnel** : Un selfie par jour, directement sur son écran d'accueil. Nouveau : 25 moods originaux pour dire comment se passe vraiment ton réveil.
 
 **Description**
 ```
@@ -88,7 +88,7 @@ WIDGETS
 • Écran verrouillé et mode StandBy
 
 MORNI+ — UN ABONNEMENT POUR VOUS DEUX
-• Les 12 moods, Mode coquin compris
+• Les 25 moods (15 de plus qu'en gratuit), Mode coquin compris
 • Grand widget et écran verrouillé
 • Tous vos selfies, pour toujours
 • Des selfies bonus, autant que tu veux
@@ -116,7 +116,7 @@ Conditions : https://morni.app/fr/terms
 **Nombre** : `Morni: widget selfie pareja`
 **Subtítulo** : `Su cara en tu pantalla`
 **Palabras clave** : `novio,novia,a distancia,relacion,amor,foto,te extraño,juntos,mejor amiga,diario`
-**Texto promocional** : Un selfie al día, directo a su pantalla de inicio. Nuevo: 12 moods originales para contar cómo va de verdad tu mañana.
+**Texto promocional** : Un selfie al día, directo a su pantalla de inicio. Nuevo: 25 moods originales para contar cómo va de verdad tu mañana.
 
 **Descripción**
 ```
@@ -141,7 +141,7 @@ WIDGETS
 • Pantalla bloqueada y StandBy
 
 MORNI+: UN PLAN PARA LOS DOS
-• Los 12 moods, Picante incluido
+• Los 25 moods (15 más que en gratis), Picante incluido
 • Widget grande y de pantalla bloqueada
 • Todos vuestros selfies, para siempre
 • Selfies extra, todos los que quieras

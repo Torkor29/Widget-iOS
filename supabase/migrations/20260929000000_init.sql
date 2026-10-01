@@ -49,8 +49,8 @@ create table public.drops (
   author_id uuid not null references public.profiles (id) on delete cascade,
   image_path text not null,
   thumb_path text not null,
-  mood text check (mood in ('sunny', 'sleepy', 'grumpy', 'inlove', 'missyou', 'coffee',
-                            'cuddle', 'sick', 'hungry', 'fire', 'spicy', 'proud')),
+  -- Mood sticker id; the allowed list lives in the post-drop function (design/moods/moods.json).
+  mood text check (mood ~ '^[a-z]{2,20}$'),
   caption text check (char_length(caption) <= 40),
   -- The author's local calendar day, used for streaks and the free daily limit.
   day_key date not null,

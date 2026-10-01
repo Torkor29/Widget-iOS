@@ -1,7 +1,7 @@
 // Morni "Moods" sticker set — source of truth for the mood artwork.
 // Each mood defines `sil` (silhouette, drawn in white underneath to create the
 // sticker border) and `art` (the coloured illustration). Canvas is 160×160.
-// Run `node design/scripts/build-moods.mjs` to regenerate SVG + PNG assets.
+// Run `cd design/scripts && npm run build` to regenerate SVG + PNG assets.
 
 const PLUM = '#2B1033';
 const CORAL = '#FF6B81';
@@ -166,6 +166,139 @@ export const moods = {
       ${eyeArcUp(66, 88, 11)}${eyeArcUp(83, 88, 11)}${cheek(62, 99)}${cheek(98, 99)}
       ${stroke('M72 100 q8 9 16 0')}
       ${sparkle(24, 30, 1, LILAC)}${sparkle(140, 26, 0.8, CORAL)}`,
+  },
+  kiss: {
+    defs: grad('g', '#FFC6D6', '#FF7A9A'),
+    sil: `<circle cx="78" cy="88" r="42"/>${heartSil(126, 84, 1.4)}${heartSil(138, 54, 0.9)}`,
+    art: `<circle cx="78" cy="88" r="42" fill="url(#g)"/>${shine(60, 68)}
+      ${eyeArcDown(55, 84)}${eyeArcDown(85, 84)}${cheek(54, 98)}${cheek(100, 98)}
+      ${stroke('M84 98 q8 2.5 0 6 q8 2.5 0 6', 4.5)}
+      ${heart(126, 84, 1.4, CORAL)}${heart(138, 54, 0.9, CORAL)}`,
+  },
+  party: {
+    defs: grad('g', '#FFE38A', '#FF9E86') + grad('h', '#CBB8FF', '#8E6CF0'),
+    sil: `<circle cx="80" cy="92" r="40"/><path d="M56 62 L90 20 L108 60 Z" stroke-linejoin="round"/><circle cx="90" cy="20" r="8"/>
+      <path d="M22 52 l8 -3 M136 74 l8 3 M26 124 l8 -2 M132 120 l7 4" fill="none" stroke-width="16"/>`,
+    art: `${stroke('M22 52 l8 -3', 5, CORAL)}${stroke('M136 74 l8 3', 5, LILAC)}${stroke('M26 124 l8 -2', 5, GOLD)}${stroke('M132 120 l7 4', 5, CORAL)}
+      <circle cx="80" cy="92" r="40" fill="url(#g)"/>${shine(62, 76)}
+      <path d="M56 62 L90 20 L108 60 Q82 68 56 62 Z" fill="url(#h)" stroke="url(#h)" stroke-width="2" stroke-linejoin="round"/>
+      ${stroke('M71 46 L98 50', 4, GOLD)}${stroke('M64 55 L103 58', 4, CORAL)}
+      <circle cx="90" cy="20" r="7" fill="${GOLD}"/>
+      ${eyeArcUp(60, 90)}${eyeArcUp(88, 90)}${cheek(57, 102)}${cheek(103, 102)}
+      <path d="M67 103 Q80 120 93 103 Z" fill="${PLUM}" stroke="${PLUM}" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M73 110 Q80 116 87 110 Q80 107 73 110 Z" fill="${CORAL}"/>`,
+  },
+  sad: {
+    defs: grad('g', '#CFE7FF', '#7FB2F5'),
+    sil: `<path d="M80 26 C96 52 122 74 122 98 C122 122 103 136 80 136 C57 136 38 122 38 98 C38 74 64 52 80 26 Z"/>`,
+    art: `<path d="M80 26 C96 52 122 74 122 98 C122 122 103 136 80 136 C57 136 38 122 38 98 C38 74 64 52 80 26 Z" fill="url(#g)"/>${shine(64, 76, -50)}
+      ${stroke('M56 84 l11 -4')}${stroke('M104 84 l-11 -4')}
+      <ellipse cx="65" cy="98" rx="6.5" ry="8" fill="${PLUM}"/><circle cx="67" cy="94.5" r="2.5" fill="#fff"/>
+      <ellipse cx="95" cy="98" rx="6.5" ry="8" fill="${PLUM}"/><circle cx="97" cy="94.5" r="2.5" fill="#fff"/>
+      <path d="M100 108 q-5 8 0 11 q5 -3 0 -11 z" fill="#fff" opacity=".9"/>
+      ${stroke('M71 122 q9 -7 18 0')}`,
+  },
+  jealous: {
+    defs: grad('g', '#D9F2B8', '#8CCB7E'),
+    sil: `<circle cx="80" cy="88" r="42"/>`,
+    art: `<circle cx="80" cy="88" r="42" fill="url(#g)"/>${shine(62, 68)}
+      <path d="M52 88 a10 8 0 0 0 20 0 z" fill="#fff"/><circle cx="67" cy="91" r="3.8" fill="${PLUM}"/>
+      <path d="M86 88 a10 8 0 0 0 20 0 z" fill="#fff"/><circle cx="101" cy="91" r="3.8" fill="${PLUM}"/>
+      ${stroke('M50 88 h24')}${stroke('M84 88 h24')}
+      ${stroke('M72 110 q10 -5 20 2')}`,
+  },
+  cool: {
+    defs: grad('g', '#FFDD7A', '#FF9F5A'),
+    sil: `<circle cx="80" cy="88" r="42"/>`,
+    art: `<circle cx="80" cy="88" r="42" fill="url(#g)"/>${shine(62, 66)}
+      <rect x="50" y="76" width="27" height="17" rx="7" fill="${PLUM}"/><rect x="83" y="76" width="27" height="17" rx="7" fill="${PLUM}"/>
+      ${stroke('M77 81 h6', 4)}${stroke('M50 80 l-8 -4', 4)}${stroke('M110 80 l8 -4', 4)}
+      ${stroke('M56 80 l6 8', 2.5, '#fff')}${stroke('M89 80 l6 8', 2.5, '#fff')}
+      ${cheek(54, 102)}${cheek(106, 102)}
+      ${stroke('M70 108 q11 7 22 -3')}`,
+  },
+  angel: {
+    defs: grad('g', '#FFFDF7', '#FFDDC4'),
+    sil: `<circle cx="80" cy="92" r="40"/><ellipse cx="80" cy="40" rx="28" ry="9" fill="none" stroke-width="20"/>
+      <path d="M44 88 C24 76 16 100 28 108 C20 116 30 128 46 118 Z M116 88 C136 76 144 100 132 108 C140 116 130 128 114 118 Z"/>`,
+    art: `<path d="M44 88 C24 76 16 100 28 108 C20 116 30 128 46 118 Z M116 88 C136 76 144 100 132 108 C140 116 130 128 114 118 Z" fill="#EDE6FF" stroke="${LILAC}" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="80" cy="92" r="40" fill="url(#g)"/>${shine(62, 74)}
+      <ellipse cx="80" cy="40" rx="28" ry="9" fill="none" stroke="${GOLD}" stroke-width="6"/>
+      ${eyeArcUp(60, 92)}${eyeArcUp(88, 92)}${cheek(57, 104)}${cheek(103, 104)}
+      ${stroke('M70 106 q10 9 20 0')}`,
+  },
+  devil: {
+    defs: grad('g', '#D2B4FF', '#8A63EE'),
+    sil: `<circle cx="80" cy="92" r="40"/><path d="M50 66 C42 50 44 36 52 26 C56 42 64 52 70 56 Z M110 66 C118 50 116 36 108 26 C104 42 96 52 90 56 Z" stroke-linejoin="round"/>`,
+    art: `<path d="M50 66 C42 50 44 36 52 26 C56 42 64 52 70 56 Z M110 66 C118 50 116 36 108 26 C104 42 96 52 90 56 Z" fill="#FF5C7A" stroke="#FF5C7A" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="80" cy="92" r="40" fill="url(#g)"/>${shine(62, 74)}
+      ${stroke('M57 82 l13 6')}${stroke('M103 82 l-13 6')}
+      ${eyeDot(66, 94)}${eyeDot(94, 94)}
+      <path d="M62 104 Q80 124 98 104 Q80 112 62 104 Z" fill="${PLUM}" stroke="${PLUM}" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M86 107 l4 7 l3 -8 z" fill="#fff"/>`,
+  },
+  shy: {
+    defs: grad('g', '#FFD9CC', '#FFA79A'),
+    sil: `<circle cx="80" cy="86" r="42"/><circle cx="46" cy="108" r="11"/><circle cx="114" cy="108" r="11"/>${sparkleSil(132, 40, 0.8)}`,
+    art: `<circle cx="80" cy="86" r="42" fill="url(#g)"/>${shine(62, 64)}
+      ${eyeArcDown(58, 88, 12)}${eyeArcDown(90, 88, 12)}
+      <ellipse cx="56" cy="100" rx="11" ry="6.5" fill="${CORAL}" opacity=".6"/><ellipse cx="104" cy="100" rx="11" ry="6.5" fill="${CORAL}" opacity=".6"/>
+      ${stroke('M73 108 q3.5 -3 7 0 q3.5 3 7 0', 3.8)}
+      <circle cx="48" cy="106" r="10" fill="#FFB3A4"/><circle cx="112" cy="106" r="10" fill="#FFB3A4"/>
+      ${sparkle(132, 40, 0.8, GOLD)}`,
+  },
+  melting: {
+    defs: grad('g', '#FFD27A', '#FF9257'),
+    sil: `<path d="M40 92 C40 62 58 44 80 44 C102 44 120 62 120 92 L120 112 C120 120 112 120 112 112 C112 104 104 104 104 112 L104 124 C104 132 94 132 94 124 L94 116 C94 110 86 110 86 116 L86 130 C86 140 74 140 74 130 L74 118 C74 112 66 112 66 118 C66 124 56 124 56 118 L56 112 C56 106 48 106 48 112 C48 118 40 118 40 110 Z"/><ellipse cx="80" cy="142" rx="40" ry="6"/><path d="M118 52 q-6 9 0 12 q6 -3 0 -12 z"/>`,
+    art: `<ellipse cx="80" cy="142" rx="40" ry="6" fill="#FFAE66"/>
+      <path d="M40 92 C40 62 58 44 80 44 C102 44 120 62 120 92 L120 112 C120 120 112 120 112 112 C112 104 104 104 104 112 L104 124 C104 132 94 132 94 124 L94 116 C94 110 86 110 86 116 L86 130 C86 140 74 140 74 130 L74 118 C74 112 66 112 66 118 C66 124 56 124 56 118 L56 112 C56 106 48 106 48 112 C48 118 40 118 40 110 Z" fill="url(#g)"/>${shine(62, 64)}
+      ${stroke('M56 80 q7 6 14 0')}${stroke('M90 80 q7 6 14 0')}
+      ${stroke('M69 98 q5.5 -4 11 0 q5.5 4 11 0', 4)}
+      <path d="M118 52 q-6 9 0 12 q6 -3 0 -12 z" fill="${TEAR}"/>`,
+  },
+  pizza: {
+    defs: grad('g', '#FFE58F', '#FFB347', 0.5, 0, 0.5, 1),
+    sil: `<path d="M28 46 Q80 22 132 46 L86 138 Q80 146 74 138 Z" stroke-linejoin="round"/>`,
+    art: `<path d="M30 48 Q80 26 130 48 L85 136 Q80 143 75 136 Z" fill="url(#g)"/>
+      ${stroke('M30 48 Q80 26 130 48', 13, '#E9A25A')}
+      <circle cx="58" cy="66" r="7" fill="${CORAL}"/><circle cx="104" cy="64" r="6.5" fill="${CORAL}"/><circle cx="84" cy="112" r="6" fill="${CORAL}"/>
+      ${eyeDot(70, 78, 4.2)}${eyeDot(92, 78, 4.2)}
+      ${stroke('M72 90 q9 8 18 0', 4)}`,
+  },
+  plane: {
+    defs: grad('g', '#FF97A8', '#FF5C7A') + grad('h', '#CBB8FF', '#9E86F5'),
+    sil: `<rect x="34" y="52" width="92" height="76" rx="18"/><path d="M62 52 v-14 h36 v14" fill="none" stroke-width="22"/><circle cx="52" cy="134" r="8"/><circle cx="108" cy="134" r="8"/>`,
+    art: `${stroke('M62 52 v-14 h36 v14', 7, '#9AA0B8')}
+      <circle cx="52" cy="133" r="7" fill="${PLUM}"/><circle cx="108" cy="133" r="7" fill="${PLUM}"/>
+      <rect x="34" y="52" width="92" height="76" rx="18" fill="url(#g)"/>
+      <rect x="34" y="70" width="92" height="9" fill="#fff" opacity=".35"/>
+      ${shine(52, 62, -20)}
+      ${eyeArcUp(60, 98)}${eyeArcUp(88, 98)}${cheek(56, 108)}${cheek(104, 108)}
+      ${stroke('M72 110 q8 8 16 0')}
+      <rect x="96" y="84" width="20" height="13" rx="4" fill="url(#h)" transform="rotate(12 106 90)"/>
+      ${heart(106, 91, 0.6, '#fff')}`,
+  },
+  goodnight: {
+    defs: grad('g', '#FFF3C4', '#FFC95C') + `<mask id="m"><rect width="160" height="160" fill="#fff"/><circle cx="106" cy="66" r="40" fill="#000"/></mask><mask id="n"><rect width="160" height="160" fill="#fff"/><circle cx="106" cy="66" r="33" fill="#000"/></mask>`,
+    sil: `<circle cx="78" cy="86" r="59" mask="url(#n)"/>${sparkleSil(118, 34, 0.9)}${sparkleSil(140, 74, 0.6)}`,
+    art: `<circle cx="78" cy="86" r="52" fill="url(#g)" mask="url(#m)"/>
+      ${shine(48, 74, -60)}
+      ${eyeArcDown(46, 96, 12)}${eyeArcDown(68, 106, 12)}
+      ${cheek(44, 108)}
+      ${stroke('M58 118 q7 5 14 0', 4)}
+      ${sparkle(118, 34, 0.9, LILAC)}${sparkle(140, 74, 0.6, GOLD)}`,
+  },
+  freezing: {
+    defs: grad('g', '#EAF8FF', '#9ED6F5'),
+    sil: `<rect x="38" y="46" width="84" height="84" rx="20"/><path d="M24 70 q-6 10 0 20 M136 70 q6 10 0 20" fill="none" stroke-width="14"/>${sparkleSil(132, 36, 0.8)}`,
+    art: `${stroke('M24 70 q-6 10 0 20', 4, '#8EC5FF')}${stroke('M136 70 q6 10 0 20', 4, '#8EC5FF')}
+      <rect x="38" y="46" width="84" height="84" rx="20" fill="url(#g)"/>
+      <rect x="44" y="52" width="72" height="72" rx="15" fill="none" stroke="#fff" stroke-width="3" opacity=".7"/>
+      ${shine(60, 62, -30)}
+      ${stroke('M56 82 l9 5 l-9 5')}${stroke('M104 82 l-9 5 l-9 5')}
+      <rect x="64" y="100" width="32" height="14" rx="5" fill="#fff" stroke="${PLUM}" stroke-width="3.5"/>
+      ${stroke('M72 101 v12 M80 101 v12 M88 101 v12', 2.5)}
+      ${sparkle(132, 36, 0.8, '#8EC5FF')}`,
   },
 };
 

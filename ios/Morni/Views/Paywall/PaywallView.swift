@@ -43,7 +43,7 @@ struct PaywallView: View {
                 VStack(alignment: .leading, spacing: 12) {
                     Benefit(icon: "heart.fill", text: "Your person gets Morni+ too")
                     Benefit(icon: "photo.stack.fill", text: "Every selfie, forever: your shared memories")
-                    Benefit(icon: "face.smiling.inverse", text: "All 12 moods, including Spicy 🌶️")
+                    Benefit(icon: "face.smiling.inverse", text: "All 25 moods, including Spicy 🌶️")
                     Benefit(icon: "rectangle.3.group.fill", text: "Large and Lock Screen widgets")
                     Benefit(icon: "camera.fill", text: "Bonus selfies, as many as you want")
                     Benefit(icon: "airplane", text: "Countdown to your next reunion")

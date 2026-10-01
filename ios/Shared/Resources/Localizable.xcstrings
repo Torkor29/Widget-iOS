@@ -93,6 +93,22 @@
     "&": {
       "shouldTranslate": false
     },
+    "A bit sad": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un peu triste"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un poco triste"
+          }
+        }
+      }
+    },
     "Add a caption…": {
       "localizations": {
         "fr": {
@@ -109,18 +125,34 @@
         }
       }
     },
-    "All 12 moods, including Spicy 🌶️": {
+    "All 25 moods, including Spicy 🌶️": {
       "localizations": {
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les 12 moods, dont Mode coquin 🌶️"
+            "value": "Les 25 moods, dont Mode coquin 🌶️"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Los 12 moods, incluido Picante 🌶️"
+            "value": "Los 25 moods, incluido Picante 🌶️"
+          }
+        }
+      }
+    },
+    "Angel": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ange"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Angelito"
           }
         }
       }
@@ -496,6 +528,22 @@
         }
       }
     },
+    "Feeling cool": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode stylé"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con estilo"
+          }
+        }
+      }
+    },
     "First name": {
       "localizations": {
         "fr": {
@@ -544,6 +592,22 @@
         }
       }
     },
+    "Freezing": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je caille"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qué frío"
+          }
+        }
+      }
+    },
     "G": {
       "shouldTranslate": false
     },
@@ -559,6 +623,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Obtener Morni+"
+          }
+        }
+      }
+    },
+    "Good night": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonne nuit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buenas noches"
           }
         }
       }
@@ -691,6 +771,22 @@
         }
       }
     },
+    "Jealous": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jalousie"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Celos"
+          }
+        }
+      }
+    },
     "Join": {
       "localizations": {
         "fr": {
@@ -719,6 +815,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Únete a mí en Morni para despertar viendo nuestras caras ☀️ Mi código: %@"
+          }
+        }
+      }
+    },
+    "Kiss": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bisou"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Besito"
           }
         }
       }
@@ -771,6 +883,22 @@
         }
       }
     },
+    "Little devil": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Petit diable"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diablillo"
+          }
+        }
+      }
+    },
     "Léa · Radiant": {
       "localizations": {
         "fr": {
@@ -799,6 +927,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gestionar suscripción"
+          }
+        }
+      }
+    },
+    "Melting": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je fonds"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Me derrito"
           }
         }
       }
@@ -1052,6 +1196,22 @@
         }
       }
     },
+    "On my way": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "J'arrive"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voy para allá"
+          }
+        }
+      }
+    },
     "One of you is already connected to someone.": {
       "localizations": {
         "fr": {
@@ -1148,6 +1308,22 @@
         }
       }
     },
+    "Party mode": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode fête"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De fiesta"
+          }
+        }
+      }
+    },
     "Payment is charged to your Apple ID. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel anytime in your App Store settings.": {
       "localizations": {
         "fr": {
@@ -1160,6 +1336,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "El pago se carga a tu Apple ID. La suscripción se renueva automáticamente salvo que la canceles al menos 24 horas antes del final del periodo actual. Gestiónala o cancélala cuando quieras en los ajustes del App Store."
+          }
+        }
+      }
+    },
+    "Pizza night": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soirée pizza"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noche de pizza"
           }
         }
       }
@@ -1432,6 +1624,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajustes"
+          }
+        }
+      }
+    },
+    "Shy": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timide"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con vergüenza"
           }
         }
       }

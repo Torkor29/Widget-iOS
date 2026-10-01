@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="sad-g" x1="0.2" y1="0.1" x2="0.8" y2="0.95"><stop offset="0" stop-color="#CFE7FF"/><stop offset="1" stop-color="#7FB2F5"/></linearGradient>
+    <filter id="sad-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#2B1033" flood-opacity=".22"/></filter>
+  </defs>
+  <g fill="#fff" stroke="#fff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" filter="url(#sad-shadow)"><path d="M80 26 C96 52 122 74 122 98 C122 122 103 136 80 136 C57 136 38 122 38 98 C38 74 64 52 80 26 Z"/></g>
+  <path d="M80 26 C96 52 122 74 122 98 C122 122 103 136 80 136 C57 136 38 122 38 98 C38 74 64 52 80 26 Z" fill="url(#sad-g)"/><ellipse cx="64" cy="76" rx="11" ry="6" fill="#fff" opacity=".5" transform="rotate(-50 64 76)"/>
+      <path d="M56 84 l11 -4" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 84 l-11 -4" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="65" cy="98" rx="6.5" ry="8" fill="#2B1033"/><circle cx="67" cy="94.5" r="2.5" fill="#fff"/>
+      <ellipse cx="95" cy="98" rx="6.5" ry="8" fill="#2B1033"/><circle cx="97" cy="94.5" r="2.5" fill="#fff"/>
+      <path d="M100 108 q-5 8 0 11 q5 -3 0 -11 z" fill="#fff" opacity=".9"/>
+      <path d="M71 122 q9 -7 18 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

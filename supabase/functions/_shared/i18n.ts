@@ -2,6 +2,7 @@ export type Locale = "en" | "fr" | "es";
 
 export const asLocale = (v: unknown): Locale => (v === "fr" || v === "es" ? v : "en");
 
+// Keep in sync with design/moods/moods.json.
 const moods: Record<string, Record<Locale, string>> = {
   sunny: { en: "Radiant", fr: "Au top", es: "Radiante" },
   sleepy: { en: "Still in bed", fr: "Encore au lit", es: "Aún en la cama" },
@@ -12,9 +13,22 @@ const moods: Record<string, Record<Locale, string>> = {
   cuddle: { en: "Need a hug", fr: "Besoin d'un câlin", es: "Quiero un abrazo" },
   sick: { en: "Under the weather", fr: "Patraque", es: "Con fiebre" },
   hungry: { en: "Hangry", fr: "Faim de loup", es: "Con hambre" },
-  fire: { en: "On fire", fr: "À fond", es: "A tope" },
-  spicy: { en: "Spicy", fr: "Mode coquin", es: "Picante" },
   proud: { en: "So proud", fr: "Fierté", es: "Orgullo" },
+  kiss: { en: "Kiss", fr: "Bisou", es: "Besito" },
+  spicy: { en: "Spicy", fr: "Mode coquin", es: "Picante" },
+  fire: { en: "On fire", fr: "À fond", es: "A tope" },
+  party: { en: "Party mode", fr: "Mode fête", es: "De fiesta" },
+  sad: { en: "A bit sad", fr: "Un peu triste", es: "Un poco triste" },
+  jealous: { en: "Jealous", fr: "Jalousie", es: "Celos" },
+  cool: { en: "Feeling cool", fr: "Mode stylé", es: "Con estilo" },
+  angel: { en: "Angel", fr: "Ange", es: "Angelito" },
+  devil: { en: "Little devil", fr: "Petit diable", es: "Diablillo" },
+  shy: { en: "Shy", fr: "Timide", es: "Con vergüenza" },
+  melting: { en: "Melting", fr: "Je fonds", es: "Me derrito" },
+  pizza: { en: "Pizza night", fr: "Soirée pizza", es: "Noche de pizza" },
+  plane: { en: "On my way", fr: "J'arrive", es: "Voy para allá" },
+  goodnight: { en: "Good night", fr: "Bonne nuit", es: "Buenas noches" },
+  freezing: { en: "Freezing", fr: "Je caille", es: "Qué frío" },
 };
 
 export const MOOD_IDS = Object.keys(moods);

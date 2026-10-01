@@ -31,7 +31,7 @@ const en = {
   },
   moods: {
     title: "Say it with your face (and a sticker)",
-    sub: "Twelve original moods, drawn just for Morni. Grumpy mornings included.",
+    sub: "Twenty-five original moods, drawn just for Morni. Grumpy mornings included.",
     plus: "Morni+",
   },
   uses: {
@@ -49,7 +49,7 @@ const en = {
     free: {
       name: "Free",
       price: "$0",
-      features: ["One selfie a day", "6 moods", "Small and medium widgets", "Streaks and reactions", "7 days of memories"],
+      features: ["One selfie a day", "10 moods", "Small and medium widgets", "Streaks and reactions", "7 days of memories"],
     },
     plus: {
       name: "Morni+",
@@ -59,7 +59,7 @@ const en = {
       trial: "3-day free trial",
       features: [
         "Everything in Free",
-        "All 12 moods, Spicy included 🌶️",
+        "All 25 moods: 15 more, Spicy included 🌶️",
         "Large and Lock Screen widgets",
         "Every selfie, forever",
         "Bonus selfies, as many as you want",

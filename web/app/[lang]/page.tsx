@@ -78,7 +78,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
             <h2 className="font-display text-4xl font-semibold sm:text-5xl">{dict.moods.title}</h2>
             <p className="mt-4 max-w-xl text-lg text-cream/70">{dict.moods.sub}</p>
-            <div className="mt-12 grid grid-cols-3 gap-4 sm:grid-cols-4 lg:grid-cols-6">
+            <div className="mt-12 grid grid-cols-3 gap-4 sm:grid-cols-5">
               {moods.map((mood) => (
                 <div key={mood.id} className="relative flex flex-col items-center rounded-3xl bg-white/5 px-2 pb-4 pt-3 text-center">
                   <MoodSticker id={mood.id} size={96} alt={mood.label[lang]} />

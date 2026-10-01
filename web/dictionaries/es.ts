@@ -31,7 +31,7 @@ const es: Dictionary = {
   },
   moods: {
     title: "Dilo con tu cara (y un sticker)",
-    sub: "Doce moods originales, dibujados solo para Morni. Mañanas de malas incluidas.",
+    sub: "Veinticinco moods originales, dibujados solo para Morni. Mañanas de malas incluidas.",
     plus: "Morni+",
   },
   uses: {
@@ -49,7 +49,7 @@ const es: Dictionary = {
     free: {
       name: "Gratis",
       price: "0 €",
-      features: ["Un selfie al día", "6 moods", "Widgets pequeño y mediano", "Rachas y reacciones", "7 días de recuerdos"],
+      features: ["Un selfie al día", "10 moods", "Widgets pequeño y mediano", "Rachas y reacciones", "7 días de recuerdos"],
     },
     plus: {
       name: "Morni+",
@@ -59,7 +59,7 @@ const es: Dictionary = {
       trial: "3 días de prueba gratis",
       features: [
         "Todo lo de Gratis",
-        "Los 12 moods, Picante incluido 🌶️",
+        "Los 25 moods: 15 más, Picante incluido 🌶️",
         "Widget grande y de pantalla bloqueada",
         "Todos vuestros selfies, para siempre",
         "Selfies extra, todos los que quieras",

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="goodnight-g" x1="0.2" y1="0.1" x2="0.8" y2="0.95"><stop offset="0" stop-color="#FFF3C4"/><stop offset="1" stop-color="#FFC95C"/></linearGradient><mask id="goodnight-m"><rect width="160" height="160" fill="#fff"/><circle cx="106" cy="66" r="40" fill="#000"/></mask><mask id="goodnight-n"><rect width="160" height="160" fill="#fff"/><circle cx="106" cy="66" r="33" fill="#000"/></mask>
+    <filter id="goodnight-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#2B1033" flood-opacity=".22"/></filter>
+  </defs>
+  <g fill="#fff" stroke="#fff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" filter="url(#goodnight-shadow)"><circle cx="78" cy="86" r="59" mask="url(#goodnight-n)"/><path d="M0 -10 C1 -3 3 -1 10 0 C3 1 1 3 0 10 C-1 3 -3 1 -10 0 C-3 -1 -1 -3 0 -10 Z" transform="translate(118 34) scale(0.9)" stroke-width="13.333333333333332"/><path d="M0 -10 C1 -3 3 -1 10 0 C3 1 1 3 0 10 C-1 3 -3 1 -10 0 C-3 -1 -1 -3 0 -10 Z" transform="translate(140 74) scale(0.6)" stroke-width="20"/></g>
+  <circle cx="78" cy="86" r="52" fill="url(#goodnight-g)" mask="url(#goodnight-m)"/>
+      <ellipse cx="48" cy="74" rx="11" ry="6" fill="#fff" opacity=".5" transform="rotate(-60 48 74)"/>
+      <path d="M46 96 q6 5.4 12 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round"/><path d="M68 106 q6 5.4 12 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round"/>
+      <ellipse cx="44" cy="108" rx="7.5" ry="4.5" fill="#FF6B81" opacity=".42"/>
+      <path d="M58 118 q7 5 14 0" fill="none" stroke="#2B1033" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0 -10 C1 -3 3 -1 10 0 C3 1 1 3 0 10 C-1 3 -3 1 -10 0 C-3 -1 -1 -3 0 -10 Z" transform="translate(118 34) scale(0.9)" fill="#B9A6FF"/><path d="M0 -10 C1 -3 3 -1 10 0 C3 1 1 3 0 10 C-1 3 -3 1 -10 0 C-3 -1 -1 -3 0 -10 Z" transform="translate(140 74) scale(0.6)" fill="#FFC24B"/>
+</svg>

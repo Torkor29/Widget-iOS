@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="melting-g" x1="0.2" y1="0.1" x2="0.8" y2="0.95"><stop offset="0" stop-color="#FFD27A"/><stop offset="1" stop-color="#FF9257"/></linearGradient>
+    <filter id="melting-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#2B1033" flood-opacity=".22"/></filter>
+  </defs>
+  <g fill="#fff" stroke="#fff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" filter="url(#melting-shadow)"><path d="M40 92 C40 62 58 44 80 44 C102 44 120 62 120 92 L120 112 C120 120 112 120 112 112 C112 104 104 104 104 112 L104 124 C104 132 94 132 94 124 L94 116 C94 110 86 110 86 116 L86 130 C86 140 74 140 74 130 L74 118 C74 112 66 112 66 118 C66 124 56 124 56 118 L56 112 C56 106 48 106 48 112 C48 118 40 118 40 110 Z"/><ellipse cx="80" cy="142" rx="40" ry="6"/><path d="M118 52 q-6 9 0 12 q6 -3 0 -12 z"/></g>
+  <ellipse cx="80" cy="142" rx="40" ry="6" fill="#FFAE66"/>
+      <path d="M40 92 C40 62 58 44 80 44 C102 44 120 62 120 92 L120 112 C120 120 112 120 112 112 C112 104 104 104 104 112 L104 124 C104 132 94 132 94 124 L94 116 C94 110 86 110 86 116 L86 130 C86 140 74 140 74 130 L74 118 C74 112 66 112 66 118 C66 124 56 124 56 118 L56 112 C56 106 48 106 48 112 C48 118 40 118 40 110 Z" fill="url(#melting-g)"/><ellipse cx="62" cy="64" rx="11" ry="6" fill="#fff" opacity=".5" transform="rotate(-35 62 64)"/>
+      <path d="M56 80 q7 6 14 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M90 80 q7 6 14 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M69 98 q5.5 -4 11 0 q5.5 4 11 0" fill="none" stroke="#2B1033" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M118 52 q-6 9 0 12 q6 -3 0 -12 z" fill="#8EC5FF"/>
+</svg>

@@ -31,7 +31,7 @@ const fr: Dictionary = {
   },
   moods: {
     title: "Dis-le avec ta tête (et un sticker)",
-    sub: "Douze moods originaux, dessinés rien que pour Morni. Réveils grognons compris.",
+    sub: "Vingt-cinq moods originaux, dessinés rien que pour Morni. Réveils grognons compris.",
     plus: "Morni+",
   },
   uses: {
@@ -49,7 +49,7 @@ const fr: Dictionary = {
     free: {
       name: "Gratuit",
       price: "0 €",
-      features: ["Un selfie par jour", "6 moods", "Petit et moyen widgets", "Séries et réactions", "7 jours de souvenirs"],
+      features: ["Un selfie par jour", "10 moods", "Petit et moyen widgets", "Séries et réactions", "7 jours de souvenirs"],
     },
     plus: {
       name: "Morni+",
@@ -59,7 +59,7 @@ const fr: Dictionary = {
       trial: "3 jours d'essai gratuit",
       features: [
         "Tout le gratuit",
-        "Les 12 moods, Mode coquin compris 🌶️",
+        "Les 25 moods : 15 de plus, Mode coquin compris 🌶️",
         "Grand widget et écran verrouillé",
         "Tous vos selfies, pour toujours",
         "Des selfies bonus, autant que tu veux",

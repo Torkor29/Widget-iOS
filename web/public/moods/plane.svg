@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="plane-g" x1="0.2" y1="0.1" x2="0.8" y2="0.95"><stop offset="0" stop-color="#FF97A8"/><stop offset="1" stop-color="#FF5C7A"/></linearGradient><linearGradient id="plane-h" x1="0.2" y1="0.1" x2="0.8" y2="0.95"><stop offset="0" stop-color="#CBB8FF"/><stop offset="1" stop-color="#9E86F5"/></linearGradient>
+    <filter id="plane-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#2B1033" flood-opacity=".22"/></filter>
+  </defs>
+  <g fill="#fff" stroke="#fff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" filter="url(#plane-shadow)"><rect x="34" y="52" width="92" height="76" rx="18"/><path d="M62 52 v-14 h36 v14" fill="none" stroke-width="22"/><circle cx="52" cy="134" r="8"/><circle cx="108" cy="134" r="8"/></g>
+  <path d="M62 52 v-14 h36 v14" fill="none" stroke="#9AA0B8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="52" cy="133" r="7" fill="#2B1033"/><circle cx="108" cy="133" r="7" fill="#2B1033"/>
+      <rect x="34" y="52" width="92" height="76" rx="18" fill="url(#plane-g)"/>
+      <rect x="34" y="70" width="92" height="9" fill="#fff" opacity=".35"/>
+      <ellipse cx="52" cy="62" rx="11" ry="6" fill="#fff" opacity=".5" transform="rotate(-20 52 62)"/>
+      <path d="M60 98 q6 -7.199999999999999 12 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round"/><path d="M88 98 q6 -7.199999999999999 12 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round"/><ellipse cx="56" cy="108" rx="7.5" ry="4.5" fill="#FF6B81" opacity=".42"/><ellipse cx="104" cy="108" rx="7.5" ry="4.5" fill="#FF6B81" opacity=".42"/>
+      <path d="M72 110 q8 8 16 0" fill="none" stroke="#2B1033" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="96" y="84" width="20" height="13" rx="4" fill="url(#plane-h)" transform="rotate(12 106 90)"/>
+      <path d="M0 7 C-10 0 -10 -8 -5 -8 C-2.5 -8 0 -6 0 -4 C0 -6 2.5 -8 5 -8 C10 -8 10 0 0 7 Z" transform="translate(106 91) scale(0.6)" fill="#fff"/>
+</svg>

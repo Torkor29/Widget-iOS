@@ -17,7 +17,7 @@
 ## Direction artistique « Morning Glow »
 - Palette : crème `#FFF6EF`, pêche `#FFB38A`, corail `#FF6B81`, lilas `#B9A6FF`, prune `#2B1033`, or `#FFC24B`.
 - Titres en serif éditoriale (New York dans l'app, Fraunces sur le site), interface en SF Pro Rounded / Inter.
-- 12 **moods originaux** façon stickers (`design/moods/`) : 6 gratuits, 6 Morni+.
+- 25 **moods originaux** façon stickers (`design/moods/`) : 10 gratuits, 15 Morni+.
 - Icône : deux petits soleils qui se lèvent ensemble ; leur intersection brille en doré.
 
 ## Ce qui est construit (MVP)
